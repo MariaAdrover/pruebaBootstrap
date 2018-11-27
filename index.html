@@ -108,16 +108,6 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12">
-                <!-- Parallax Materialize -->
-                <div class="parallax-container">
-                    <div class="parallax"><img src="img/2.jpg"></div>
-                </div>
-                <!-- Parallax Materialize -->
-            </div>
-        </div>
-
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
@@ -130,6 +120,11 @@
                     experiences. </p>
             </div>
         </div>
+        <!--Parallax gianlucaguarini-->
+        <figure style="position: relative; height: 300px; overflow: hidden;">
+            <img class="parallax" data-center="0.2" data-intensity="10" data-safe-height="0.2" src="img/3.jpg" />
+        </figure>
+
     </div>
 
     <footer class="footer">
@@ -175,10 +170,22 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://rawgit.com/GianlucaGuarini/parallax/master/dist/Parallax.js"></script>
     <script>
+
+        /*Parallax gianlucaguarini*/
+        var p = new Parallax('.parallax', {
+            offsetYBounds: 50,
+            intensity: 30,
+            center: 0.5,
+            safeHeight: 0.15
+        }).init();
+
         $(document).ready(function () {
 
         });
+
     </script>
 </body>
 
