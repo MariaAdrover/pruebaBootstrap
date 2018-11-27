@@ -130,11 +130,6 @@
                     experiences. </p>
             </div>
         </div>
-        <!--Parallax gianlucaguarini-->
-        <figure style="position: relative; height: 300px; overflow: hidden;">
-            <img class="parallax" data-center="0.2" data-intensity="10" data-safe-height="0.2" src="img/3.jpg" />
-        </figure>
-
     </div>
 
     <footer class="footer">
@@ -180,72 +175,10 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://rawgit.com/GianlucaGuarini/parallax/master/dist/Parallax.js"></script>
     <script>
-
-        /*Parallax gianlucaguarini
-    	
-    	
-        */
-
-        var p = new Parallax('.parallax', {
-            offsetYBounds: 50,
-            intensity: 30,
-            center: 0.5,
-            safeHeight: 0.15
-        }).init();
-
-        /*stellar
-    	
-        $(function(){
-            $.stellar({
-                horizontalScrolling: false,
-                verticalOffset: 40
-            });
-        });
-        */
-
         $(document).ready(function () {
-			/*
-		    $(".materialboxed").materialbox();
-            $('.datepicker').datepicker();
-            $('#timepicker1').timepicker({
-                twelveHour: true,
-                showClearBtn: true,
-                defaultTime: 'now'
-            });
-            $('#timepicker2').timepicker({
-                twelveHour: false,
-                showClearBtn: true,
-                defaultTime: 'now'
-            });
-			*/
 
-	        /*----------Parallax Materialize----------
-			$('.parallax').parallax();*/
-
-
-			/*
-            $('.parallax').parallax();
-            document.addEventListener('DOMContentLoaded', function () {
-                var elems = document.querySelectorAll('.parallax');
-                var instances = M.Parallax.init(elems, { responsiveThreshold: 40 });
-            });
-			ç*/
-            /*----------Parallax Materialize----------*/
-            /*
-            $(window).scroll(function(e){
-                parallax();
-            });
-    
-            function parallax(){
-                var scrolled = $(window).scrollTop();
-                $('.bg').css('bottom',-(scrolled*0.1)+'px');
-            }
-            */
         });
-
     </script>
 </body>
 
