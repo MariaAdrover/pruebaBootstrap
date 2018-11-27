@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
-  "scripts": {    
-	  "start": "npm run lite",
-	  "lite": "lite-server",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/MariaAdrover/pruebaBootstrap#readme",
   "devDependencies": {
-    "lite-server": "^2.4.0"
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "lite-server": "^2.4.0",
+    "popper.js": "^1.12.9"
   }
 }
