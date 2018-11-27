@@ -8,6 +8,10 @@
 	color: floralWhite;
 }
 
+#jumbo1 {
+    background-color: black;
+}
+
 address{
     font-size:80%;
     margin:0px;
@@ -38,5 +42,5 @@ body{
 }
 
 .navbar-dark {
-     background-color: #ec008c;
+    background-color: #ec008c;
 }

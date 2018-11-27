@@ -7,70 +7,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-	
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-    <!-- Bootstrap Social
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Bootstrap Social -->
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-	 -->
-    <!-- Font Awesome
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-	 -->
-	 
+
     <!--CSS file-->
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-	<!-- jQuery CDN -->
-	<script
-		src="https://code.jquery.com/jquery-3.3.1.min.js"
-		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		crossorigin="anonymous"></script>
-	<!-- Popper	
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-	-->
-	
-	<!-- Bootstrap JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-	
-	<style>
-		<!--stellar
-		.photo {
-			background-attachment: fixed;
-			background-position: 50% 0;
-			background-repeat: no-repeat;
-			height: 450px;
-			position: relative;
-		}
-		.photo span {
-			bottom: 0;
-			color: white;
-			display: block;
-			left: 50%;
-			margin-left: -640px;
-			font-size: 38px;
-			padding: 10px;
-			position: absolute;
-			text-shadow: 0 2px 0 black, 0 0 10px black;
-			width: 1280px;
-		}
-		.summer {
-			background-image: url(img/bar1.jpg);
-		}-->
-		<!--
-	
-		.bg {
-			background: url('img/bar1.jpg');
-			position: fixed;
-			width: 100%;
-			height: 100%;
-			bottom: 0;
-			left: 0;
-			z-index: -1;
-		}-->
-	</style>
-	
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -84,8 +37,14 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>
                             Do de Pit</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span>
-                            Para comer</a></li>
+                    <li class="dropdown"><!--Quitar los tres nav-link-->
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">Para comer
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-link"><a href="#">Carta</a></li>
+                            <li class="nav-link"><a href="#">Menú</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span>
                             Para beber</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Eventos</a></li>
@@ -101,7 +60,7 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
+                <div id="jumbo1" class="col-12 col-sm-6 align-self-center">
                     <h1>Siam Palace Thai Cuisine</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
@@ -145,17 +104,17 @@
                     for just $19.99 per person </p>
             </div>
         </div>
-		        
-		<div class="row">
+
+        <div class="row">
             <div class="col-12">
-		<!-- Parallax Materialize -->
-				<div class="parallax-container">
-					<div class="parallax"><img src="img/2.jpg"></div>
-				</div>
-        <!-- Parallax Materialize -->
-		</div>
-		</div>
-		
+                <!-- Parallax Materialize -->
+                <div class="parallax-container">
+                    <div class="parallax"><img src="img/2.jpg"></div>
+                </div>
+                <!-- Parallax Materialize -->
+            </div>
+        </div>
+
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
@@ -168,11 +127,11 @@
                     experiences. </p>
             </div>
         </div>
-		<!--Parallax gianlucaguarini-->
-			<figure style="position: relative; height: 300px; overflow: hidden;">
-				<img class="parallax" data-center="0.2" data-intensity="10" data-safe-height="0.2" src="img/3.jpg" />
-			</figure>
-		
+        <!--Parallax gianlucaguarini-->
+        <figure style="position: relative; height: 300px; overflow: hidden;">
+            <img class="parallax" data-center="0.2" data-intensity="10" data-safe-height="0.2" src="img/3.jpg" />
+        </figure>
+
     </div>
 
     <footer class="footer">
@@ -218,32 +177,33 @@
             </div>
         </div>
     </footer>
-	
-	<script src="https://rawgit.com/GianlucaGuarini/parallax/master/dist/Parallax.js"></script>
-	<script>
-			
-			<!--Parallax gianlucaguarini-->
-			/*
-			
-			*/
-			
-			var p = new Parallax('.parallax', {
-				offsetYBounds: 50,
-				intensity: 30,
-				center: 0.5,
-				safeHeight: 0.15
-			}).init();
-			//stellar
-			/*
-			$(function(){
-				$.stellar({
-					horizontalScrolling: false,
-					verticalOffset: 40
-				});
-			});
-			*/
-			//-----------
-		$(document).ready(function () {
+
+    <script src="https://rawgit.com/GianlucaGuarini/parallax/master/dist/Parallax.js"></script>
+    <script>
+
+        /*Parallax gianlucaguarini
+    	
+    	
+        */
+
+        var p = new Parallax('.parallax', {
+            offsetYBounds: 50,
+            intensity: 30,
+            center: 0.5,
+            safeHeight: 0.15
+        }).init();
+
+        /*stellar
+    	
+        $(function(){
+            $.stellar({
+                horizontalScrolling: false,
+                verticalOffset: 40
+            });
+        });
+        */
+
+        $(document).ready(function () {
 			/*
 		    $(".materialboxed").materialbox();
             $('.datepicker').datepicker();
@@ -258,11 +218,11 @@
                 defaultTime: 'now'
             });
 			*/
-		
-	        /*----------Parallax Materialize----------*/
-			//$('.parallax').parallax();
-  
-			
+
+	        /*----------Parallax Materialize----------
+			$('.parallax').parallax();*/
+
+
 			/*
             $('.parallax').parallax();
             document.addEventListener('DOMContentLoaded', function () {
@@ -271,19 +231,19 @@
             });
 			ç*/
             /*----------Parallax Materialize----------*/
-		/*
-		$(window).scroll(function(e){
-			parallax();
-		});
+            /*
+            $(window).scroll(function(e){
+                parallax();
+            });
+    
+            function parallax(){
+                var scrolled = $(window).scrollTop();
+                $('.bg').css('bottom',-(scrolled*0.1)+'px');
+            }
+            */
+        });
 
-		function parallax(){
-			var scrolled = $(window).scrollTop();
-			$('.bg').css('bottom',-(scrolled*0.1)+'px');
-		}
-		*/
-		});
-		
-	</script>
+    </script>
 </body>
 
 </html>
