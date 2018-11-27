@@ -1,0 +1,24 @@
+{
+  "name": "@mariaav/bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {    
+	  "start": "npm run lite",
+	  "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaAdrover/pruebaBootstrap.git"
+  },
+  "author": "mia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariaAdrover/pruebaBootstrap/issues"
+  },
+  "homepage": "https://github.com/MariaAdrover/pruebaBootstrap#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
