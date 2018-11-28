@@ -1,15 +1,26 @@
 .jumbotron {
     padding:70px 30px 70px 30px;
     margin:0px auto;
-    background-image: url("../img/3.jpg");
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	background-position: center center;
 	color: floralWhite;
 }
 
+#fondoJumboHome {
+    background-image: url("../img/3.jpg");
+}
+
+#fondoJumboMenu {
+    background-image: url("../img/plato1.jpg");
+}
+
+.textoBlanco {
+    color:white;
+}
+
 #jumbo1 {
-    background-color: black;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 address{
