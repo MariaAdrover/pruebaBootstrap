@@ -42,7 +42,7 @@ address{
 }
 
 .footer{
-    background-color: #D1C4E9;
+    background-color: #0cbda0;
     margin:0px auto;
     padding: 20px 0px 20px 0px;
 }
@@ -54,4 +54,8 @@ body{
 
 .navbar-dark {
     background-color: #ec008c;
+}
+
+@media screen and (min-width: 671px) {
+    #pegatina {margin-left: -40px}
 }
