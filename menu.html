@@ -27,6 +27,9 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--Type.js-->
+    <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
     <style>
         body{
             padding:0px 0px 50px 0px;
@@ -62,7 +65,8 @@
                     <li class="nav-item"><a class="nav-link" href="#">Eventos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Horario</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><img src="img/dog5.png" height="30" width="30" style="margin-right: 5px">Dog friendly</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="img/dog5.png" height="30" width="30"
+                                style="margin-right: 5px">Dog friendly</a></li>
                 </ul>
             </div>
 
@@ -93,7 +97,8 @@
                 <li style="margin-right:25px"><a class="mr-auto" href="https://www.google.es/maps/place/Pla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears/@39.7684658,2.7097066,17.28z/data=!4m13!1m7!3m6!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!2sPla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears!3b1!8m2!3d39.7683084!4d2.7114072!3m4!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!8m2!3d39.7683084!4d2.7114072">
                         <i class="fa fa-map-marker textoBlanco"></i></a></li>
                 <li style="margin-right:25px"><a class="mr-auto" href="https://www.srperro.com/
-                    "><img src="img/dog5.png" height="30" width="30"></a></li>
+                    "><img
+                            src="img/dog5.png" height="30" width="30"></a></li>
             </ul>
         </div>
     </nav>
@@ -105,9 +110,8 @@
                 </div>
 
                 <div id="jumbo1" class="col-12 col-sm-6 align-self-center">
-                    <h1>Menu</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
-                        lipsmacking creations will tickle your culinary senses!</p>
+                    <h1 id="write1"></h1>
+                    <p id="write2"></p>
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo3.png" class="img-fluid" id="pegatina">
@@ -115,7 +119,6 @@
             </div>
         </div>
     </header>
-
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -214,8 +217,12 @@
     </footer>
 
     <script src="https://rawgit.com/GianlucaGuarini/parallax/master/dist/Parallax.js"></script>
-    <script>
 
+
+
+
+    <script>
+        var next = false;
         /*Parallax gianlucaguarini*/
         var p = new Parallax('.parallax', {
             offsetYBounds: 50,
@@ -223,10 +230,28 @@
             center: 0.5,
             safeHeight: 0.15
         }).init();
-
+        /**/
         $(document).ready(function () {
-
+            /*Typed.js*/
+            typeJumbo();
+            /**/
         });
+
+        function typeJumbo() {
+            $("#write1").typed({
+                strings: ["Menu"],
+                showCursor: false,
+                typeSpeed: 200,
+
+            });
+            $("#write2").typed({
+                strings: ["Todos los mediodías tienes un menú chachi!"],
+                showCursor: false,
+                typeSpeed: 30,
+                startDelay: 1500
+            });
+
+        }
 
     </script>
 </body>
