@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <title>Do de Pit</title>
@@ -43,30 +43,21 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container">
+    <nav class="navbar navbar-dark navbar-expand-md">
+        <!--md lg-->
+        <div class="container-fluid">
+            <a class="navbar-brand mr-auto" href="index.html"><img src="img/logo2.png" height="50" width="50"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="index.html"><img src="img/logo2.png" height="50" width="50"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto navbar-right">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Do de Pit</a></li>
-                    <li class="dropdown active">
-                        <!--Quitar los tres nav-link y pasarlo a css-->
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">Para comer
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li class="nav-link"><a href="carta.html">Carta</a></li>
-                            <li class="nav-link active"><a href="#">Menú</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Para beber</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Eventos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Horario</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><img src="img/dog5.png" height="30" width="30"
-                                style="margin-right: 5px">Dog friendly</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Qué comer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beber.html">Qué beber</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conciertos.html">Conciertos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="horario.html">Horario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
 
@@ -96,29 +87,25 @@
                 </li>
                 <li style="margin-right:25px"><a class="mr-auto" href="https://www.google.es/maps/place/Pla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears/@39.7684658,2.7097066,17.28z/data=!4m13!1m7!3m6!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!2sPla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears!3b1!8m2!3d39.7683084!4d2.7114072!3m4!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!8m2!3d39.7683084!4d2.7114072">
                         <i class="fa fa-map-marker textoBlanco"></i></a></li>
-                <li style="margin-right:25px"><a class="mr-auto" href="https://www.srperro.com/
-                    "><img
-                            src="img/dog5.png" height="30" width="30"></a></li>
+                <li style="margin-right:25px"><a class="mr-auto" href="https://www.srperro.com/"><img src="img/dog5.png"
+                            height="30" width="30"></a></li>
+                            <!--    
+                            <button data-toggle="popover" type="button">Click Me!</button>
+                            -->
             </ul>
         </div>
     </nav>
 
-    <header id="fondoJumboMenu" class="jumbotron">
+    <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-3 align-self-center">
-                </div>
-
-                <div id="jumbo1" class="col-12 col-sm-6 align-self-center">
-                    <h1 id="write1"></h1>
-                    <p id="write2"></p>
-                </div>
-                <div class="col-12 col-sm-3 align-self-center">
-                    <img src="img/logo3.png" class="img-fluid" id="pegatina">
+                <div id="jumbo1" class="col-12 align-self-center">
+                    <h1 id="write1" class="text-center"></h1>
                 </div>
             </div>
         </div>
     </header>
+
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -234,22 +221,38 @@
         $(document).ready(function () {
             /*Typed.js*/
             typeJumbo();
+
+            /*Popper*/
+            $('[data-toggle="popover"]').popover({
+                html: true,
+                title: "Popover Header",
+                placement: 'top',
+                //placement: 'top-end',
+                //content: "<img src='img/logo3.png' class='img-fluid'>",
+                //container: 'body',
+                //content: "<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' width='600' height='450' frameborder='0' style='border:0' src='https://www.google.es/maps/place/Pla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears/@39.7683084,2.7101667,17z/data=!3m1!4b1!4m5!3m4!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!8m2!3d39.7683084!4d2.7114072' allowfullscreen></iframe></div>"
+                content: "<iframe class='embed-responsive-item' width='600' height='450' frameborder='0' style='border:0' src='https://www.google.es/maps/place/Pla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears/@39.7683084,2.7101667,17z/data=!3m1!4b1!4m5!3m4!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!8m2!3d39.7683084!4d2.7114072' allowfullscreen></iframe>"
+
+            });
+
             /**/
         });
 
         function typeJumbo() {
             $("#write1").typed({
-                strings: ["Menu"],
+                strings: ["Qué comer"],
                 showCursor: false,
-                typeSpeed: 200,
+                typeSpeed: 200
 
             });
+            /*
             $("#write2").typed({
                 strings: ["Todos los mediodías tienes un menú chachi!"],
                 showCursor: false,
                 typeSpeed: 30,
                 startDelay: 1500
             });
+            */
 
         }
 

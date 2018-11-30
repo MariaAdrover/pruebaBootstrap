@@ -1,3 +1,79 @@
+body {
+    /*
+    font-family: 'Montserrat', sans-serif;
+    */
+    /*
+    font-family: 'Raleway', sans-serif;
+    */
+    /*
+    font-family: 'Roboto Condensed', sans-serif;
+    */
+    /*
+    font-family: 'Poppins', sans-serif;
+    
+    font-family: 'Oxygen', sans-serif;
+
+    font-family: 'Cabin', sans-serif;
+    
+    font-family: 'Fjalla One', sans-serif;
+    
+    font-family: 'Archivo Narrow', sans-serif;
+*/
+    font-family:"Poppins",sans-serif;
+
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.62em;
+}
+
+h1,h2,h3,h4,h5 {
+    color: #222;
+    line-height: 1.2em !important;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h1,h4 {
+    margin-top: 1rem;
+}
+
+.amarillo {
+    color: #f6af33;
+}
+
+
+/*tablas*/
+.list-group-item {
+    border: none;
+}
+
+table {
+    color: #f6af33;
+    font-weight: 450;
+}
+
+.table td {
+    border-top: none;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.panel-group {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #f6af33;
+    margin: 10px;
+    padding: 3px 15px 5px 15px;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
 .jumbotron {
     padding:70px 30px 70px 30px;
     margin:0px auto;
@@ -5,6 +81,7 @@
 	background-size: cover; 
 	background-position: center center;
 	color: floralWhite;
+    background-color: white;
 }
 
 #fondoJumboHome {
@@ -12,6 +89,10 @@
 }
 
 #fondoJumboMenu {
+    background-image: url("../img/2.jpg");
+}
+
+#fondoJumboBeber {
     background-image: url("../img/plato1.jpg");
 }
 
@@ -20,7 +101,14 @@
 }
 
 #jumbo1 {
+    /*
+    background-image: url("../img/logo3.png");
+    
     background: rgba(0, 0, 0, 0.5);
+    */
+    
+    color:black;
+
 }
 
 address{
@@ -33,12 +121,12 @@ address{
     margin:0px auto;
     padding:0px;
 }
-
+/**/
 .row-content {
     margin:0px auto;
-    padding: 50px 0px 50px 0px;
+    padding: 20px 0px 20px 0px;
     border-bottom: 1px ridge;
-    min-height:400px;
+    /*min-height:400px;*/
 }
 
 .footer{
