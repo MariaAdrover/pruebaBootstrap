@@ -115,6 +115,43 @@
                     <h1 id="write1" class="text-center"></h1>
                 </div>
             </div>
+            <div class="row row-content">
+                <div class="col-12">
+                    <h2>Modal Login Example</h2>
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header" style="padding:35px 50px;">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4><span class="glyphicon glyphicon-lock"></span>Dirección</h4>
+                                </div>
+                                <div class="modal-body" style="padding:40px 50px;">
+                                    <p>Plaza América 1, Sóller (Baleares)</p>
+                                    <p>Puedes ver la dirección en Google maps</p>
+                                    <button id="maps" type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>
+                                        Ir a Google maps</button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span
+                                            class="glyphicon glyphicon-remove"></span> Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-content">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!--<iframe class="embed-responsive-item" src="https://www.google.es/maps/place/Pla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears/@39.7683084,2.7092185,17z/data=!3m1!4b1!4m5!3m4!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!8m2!3d39.7683084!4d2.7114072"></iframe>-->
+                    <iframe class="embed-responsive-item" src="https://static.parastorage.com/services/santa/1.5597.7/static/external/googleMap.html?language=en&lat=39.5919067&long=2.6369339999999966&address=Palma Dance Center, Carrer de l'alimentació 2, 07011, Palma de Mallorca&addressInfo=Palma Dance Center&showZoom=true&showStreetView=true&showMapType=true"></iframe>
+                </div>
+            </div>
         </div>
 
         <!--Parallax gianlucaguarini-->
@@ -183,6 +220,14 @@
         }).init();
         /**/
         $(document).ready(function () {
+            /*Modal*/
+            $("#myBtn").click(function () {
+                $("#myModal").modal();
+            });
+            
+            $("#maps").click(function () {
+                window.open("https://www.google.es/maps/place/Pla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears/@39.7683084,2.7092185,17z/data=!3m1!4b1!4m5!3m4!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!8m2!3d39.7683084!4d2.7114072");
+            });
             /*Typed.js*/
             typeJumbo();
 
