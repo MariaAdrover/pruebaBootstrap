@@ -45,6 +45,10 @@ h1,h4 {
     color: #f6af33;
 }
 
+.navbar-collapse {
+    flex-grow:0; /*Elementos navbar derecha*/
+}
+
 
 /*tablas*/
 .list-group-item {
@@ -113,7 +117,8 @@ table {
 }
 
 #fondoJumboContact {
-    background-image: url("../img/eat7.jpg");
+    background-image: url("../img/drink5.jpg");
+	background-position: center top;
 }
 
 .textoBlanco {
@@ -203,6 +208,17 @@ body{
 .botonMenu:focus {
     outline:none;
 }
+
+/*Modal*/
+#maps2, .modal-header {
+    background-color:#ec008c;
+}
+
+.modal-header h3, .modal-header button {
+    color: white;
+}
+
+.modal
 
 /*Post it*/
 
@@ -328,5 +344,10 @@ body{
     #pegatina {margin-left: -40px}
     .rowEstrecha {
         margin: 4vw 10vw 4vw 10vw;
+    }
+}
+@media screen and (max-width: 670px) {
+    #colSrperro {
+        padding: 8vw;    
     }
 }
