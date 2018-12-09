@@ -98,10 +98,13 @@
         </div>
     </nav>
 
-    <header id="fondoJumboBeber" class="jumbotron">
+    <header id="fondoJumboContact" class="jumbotron">
         <div class="container-fluid">
-            <div class="row row-header">
-                <div class="col-8 col-sm-3 col-md-2 offset-2 offset-sm-9 offset-md-10">
+            <div class="row">
+                <div class="col-3 col-sm-2 col-md-1 ">
+                    <img id="perro" class="img-responsive" src="https://www.srperro.com/images/pegatina-srperro.png"></img>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 offset-sm-6 offset-md-9">
                     <img src="img/logo3.png" class="img-fluid">
                 </div>
             </div>
@@ -110,9 +113,17 @@
 
     <div class="container">
         <div class="container">
-            <div class="row row-content">
+            <div class="row row-content noRaya"><!--QuitR NO Ry-->
                 <div id="jumbo1" class="col-12 align-self-center">
                     <h1 id="write1" class="text-center"></h1>
+                </div>
+            </div>
+            <div class="row oval">
+                <div class="col-4 col-sm-3">
+                    <img id="srperro" class="img-responsive" src="https://www.srperro.com/images/pegatina-srperro.png"></img>
+                </div>
+                <div class="col-8 col-sm-9">
+                    <h4 class="text-center align-middle">Perros buenos, bienvenidos</h4>
                 </div>
             </div>
             <div class="row row-content">
@@ -134,6 +145,9 @@
                                 <div class="modal-body" style="padding:40px 50px;">
                                     <p>Plaza América 1, Sóller (Baleares)</p>
                                     <p>Puedes ver la dirección en Google maps</p>
+                                    <div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.7416579494156!2d2.7082851072879283!3d39.76790841375468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297e8b90df488b5%3A0xdfa7a37c175ac21d!2sPla%C3%A7a+d&#39;Am%C3%A8rica%2C+07100+S%C3%B3ller%2C+Illes+Balears!5e0!3m2!1ses!2ses!4v1544024491920"
+                                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
                                     <button id="maps" type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>
                                         Ir a Google maps</button>
                                 </div>
@@ -148,8 +162,25 @@
             </div>
             <div class="row row-content">
                 <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.723841656988!2d2.7092185153762775!3d39.76830837944583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297e8b90df488b5%3A0xdfa7a37c175ac21d!2sPla%C3%A7a+d&#39;Am%C3%A8rica%2C+07100+S%C3%B3ller%2C+Illes+Balears!5e0!3m2!1ses!2ses!4v1544024075511"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row row-content">
+                <div class="embed-responsive embed-responsive-16by9">
                     <!--<iframe class="embed-responsive-item" src="https://www.google.es/maps/place/Pla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears/@39.7683084,2.7092185,17z/data=!3m1!4b1!4m5!3m4!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!8m2!3d39.7683084!4d2.7114072"></iframe>-->
                     <iframe class="embed-responsive-item" src="https://static.parastorage.com/services/santa/1.5597.7/static/external/googleMap.html?language=en&lat=39.5919067&long=2.6369339999999966&address=Palma Dance Center, Carrer de l'alimentació 2, 07011, Palma de Mallorca&addressInfo=Palma Dance Center&showZoom=true&showStreetView=true&showMapType=true"></iframe>
+                </div>
+            </div>
+            <div class="row row-content">
+                <div class="col-12">
+                    <ul id="ul">
+                        <li id="li">
+                            <a href="#">
+                                <img class="img-fluid" src="https://www.srperro.com/images/pegatina-srperro.png"></img>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -224,7 +255,7 @@
             $("#myBtn").click(function () {
                 $("#myModal").modal();
             });
-            
+
             $("#maps").click(function () {
                 window.open("https://www.google.es/maps/place/Pla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears/@39.7683084,2.7092185,17z/data=!3m1!4b1!4m5!3m4!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!8m2!3d39.7683084!4d2.7114072");
             });
