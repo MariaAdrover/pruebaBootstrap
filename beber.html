@@ -24,15 +24,6 @@
     <link href="css/styles.css" rel="stylesheet">
 
     <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
@@ -42,16 +33,7 @@
 
     <!--Type.js-->
     <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
-    <style>
-        body{
-            padding:0px 0px 50px 0px;
-            z-index:0;
-        }
 
-        .navbar-collapse {
-             flex-grow:0;
-        }
-    </style>
 </head>
 
 <body>
@@ -72,14 +54,10 @@
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-
-
-            <!--
-                        <i class="fa fa-envelope fa-lg"></i>
-                        <a href="mailto:siampalace@food.net">confusion@food.net</a>
-                    -->
         </div>
     </nav>
+
+    <!--Barra fija bottom-->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-bottom">
         <div class="container-fluid">
             <ul class="nav navbar-nav" style="flex-direction: row;">
@@ -97,21 +75,20 @@
                         <i class="fa fa-phone fa-2x textoBlanco"></i></a>
                     <!--Puede ser span class="fa fa-phone"-->
                 </li>
-                <li style="margin-right:25px"><a class="mr-auto" href="https://www.google.es/maps/place/Pla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears/@39.7684658,2.7097066,17.28z/data=!4m13!1m7!3m6!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!2sPla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears!3b1!8m2!3d39.7683084!4d2.7114072!3m4!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!8m2!3d39.7683084!4d2.7114072">
-                        <i class="fa fa-map-marker fa-2x textoBlanco"></i></a></li>
-                <li style="margin-right:25px"><a class="mr-auto" href="https://www.srperro.com/"><img src="img/dog5.png"
-                            height="30" width="30"></a></li>
-                <!--    
-                <button data-toggle="popover" type="button">Click Me!</button>
-                -->
+                <li style="margin-right:25px"><a class="mr-auto" href="#">
+                        <i class="fa fa-map-marker fa-2x textoBlanco" id="myBtn"></i></a>
+                </li>
             </ul>
         </div>
     </nav>
 
     <header id="fondoJumboBeber" class="jumbotron">
         <div class="container-fluid">
-            <div class="row row-header">
-                <div class="col-8 col-sm-3 col-md-2 offset-2 offset-sm-9 offset-md-10">
+            <div class="row">
+                <div class="col-3 col-sm-2 col-md-1 ">
+                    <img id="perro" class="img-fluid" src="img/dog3.png"></img>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 offset-sm-6 offset-md-9">
                     <img src="img/logo3.png" class="img-fluid">
                 </div>
             </div>
@@ -120,7 +97,7 @@
 
     <div class="container">
         <div class="container">
-            <div class="row row-content">
+            <div class="row row-content noRaya">
                 <div id="jumbo1" class="col-12 align-self-center">
                     <h1 id="write1" class="text-center"></h1>
                 </div>
@@ -142,8 +119,8 @@
                 <h3>Vinos</h3>
                 <div class="panel-group">
                     <div class="panel panel-default">
-                        <button class="btn-block botonMenu text-left" data-toggle="collapse"
-                        data-target="#vinoBlanco" class="panel-heading">
+                        <button class="btn-block botonMenu text-left" data-toggle="collapse" data-target="#vinoBlanco"
+                            class="panel-heading">
                             <h4 class="panel-title">
                                 <h5>Blancos <i class="fa fa-plus amarillo"></i></h5>
                             </h4>
@@ -168,12 +145,12 @@
                 </div>
                 <div class="panel-group">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <button class="btn-block botonMenu text-left" data-toggle="collapse" data-target="#vinoTinto2"
+                            class="panel-heading">
                             <h4 class="panel-title">
-                                <h5>Tintos <button style="border:none; background-color:transparent;" data-toggle="collapse"
-                                        data-target="#vinoTinto2"><i class="fa fa-plus amarillo"></i></button></h5>
+                                <h5>Tintos <i class="fa fa-plus amarillo"></i></h5>
                             </h4>
-                        </div>
+                        </button>
                         <div id="vinoTinto2" class="panel-collapse collapse">
                             <div class="table-responsive">
                                 <table class="table">
@@ -190,125 +167,169 @@
                                 </table>
                             </div>
                         </div>
-                        <!--
-                        <ul class="list-group">
-                            <li class="list-group-item">One</li>
-                            <li class="list-group-item">Two</li>
-                            <li class="list-group-item">Three</li>
-                        </ul>
-                        -->
-                        <!--<div class="panel-footer">Footer</div>-->
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-5">
-                <img src="img/drink3.jpg" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;">
+                <img src="img/vermut.JPG" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;">
             </div>
         </div>
+        <div class="row rowEstrecha">
+            <div class="col-12 col-lg-7">
+                <h3>Vermuts</h3>
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <button class="btn-block botonMenu text-left" data-toggle="collapse" data-target="#vermutRojo"
+                            class="panel-heading">
+                            <h4 class="panel-title">
+                                <h5>Rojos <i class="fa fa-plus amarillo"></i></h5>
+                            </h4>
+                        </button>
+                        <div id="vermutRojo" class="panel-collapse collapse">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Viña Chachi</td>
+                                            <td class="text-right">299$</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ánima Negra</td>
+                                            <td class="text-right">49$</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <button class="btn-block botonMenu text-left" data-toggle="collapse" data-target="#vermutBlanco"
+                            class="panel-heading">
+                            <h4 class="panel-title">
+                                <h5>Blancos <i class="fa fa-plus amarillo"></i></h5>
+                            </h4>
+                        </button>
+                        <div id="vermutBlanco" class="panel-collapse collapse">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Viña salceda</td>
+                                            <td class="text-right">29$</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ánima Negra</td>
+                                            <td class="text-right">49$</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <img src="img/vermut.JPG" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+        </div>
+    </div>
 
-        <!--Parallax gianlucaguarini-->
-        <figure style="position: relative; height: 300px; overflow: hidden;">
-            <img class="parallax" data-center="0.2" data-intensity="10" data-safe-height="0.2" src="img/3.jpg" />
-        </figure>
+    <!--Parallax gianlucaguarini-->
+    <figure style="position: relative; height: 300px; overflow: hidden;">
+        <!--data-center es lugar de la img-->
+        <img class="parallax" src="img/bigbar.jpg" />
+    </figure>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Dirección</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Plaza América 1, Sóller (Baleares)</p>
+                    <p>Puedes ver la dirección en Google maps</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.7416579494156!2d2.7082851072879283!3d39.76790841375468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297e8b90df488b5%3A0xdfa7a37c175ac21d!2sPla%C3%A7a+d&#39;Am%C3%A8rica%2C+07100+S%C3%B3ller%2C+Illes+Balears!5e0!3m2!1ses!2ses!4v1544024491920"
+                            class="embed-responsive-item"></iframe>
+                    </div>
+                    <button id="maps" type="submit" class="btn btn-success btn-block">
+                        Ir a Google maps</button>
+                </div>
+                <div class="modal-footer">
+                    <button id="maps2" type="submit" class="btn btn-danger btn-default btn-block" data-dismiss="modal"></span>
+                        Volver</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-4 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-                        121, Clear Water Bay Road<br>
-                        Clear Water Bay, CA<br>
-                        USA<br>
-                        <i class="fa fa-phone fa-lg"></i> +852 1234 5678<br>
-                        <i class="fa fa-fax fa-lg"></i> +852 8765 4321<br>
-                        <i class="fa fa-envelope fa-lg"></i>
-                        <a href="mailto:siampalace@food.net">confusion@food.net</a>
-                    </address>
-                </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
-                                class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                <div class="col-12 col-lg-4" id="divHorarioFoot">
+                    <div class="col-auto text-center padCinco">
+                        <h5 class="textoBlanco">Horarios</h5>
+                        <div class="ovalWhite textoBlanco">
+                            Lunes: 9.30h - 16.00h<br>
+                            Martes - Jueves: 9.30h - 22.30h<br>
+                            Viernes -Sábado: 9.30h - 24.00h<br>
+                            <br>
+                            Lunes: CERRADO a partir de las 16.00h<br>
+                            Domingos: CERRADO TODO EL DÍA
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <p>© Copyright 2018 Siam Palace Thai Cuisine</p>
+                <div class="col-12 col-lg-4">
+                    <div class="col-auto text-center padCinco">
+                        <h5 class="textoBlanco">Contacto</h5>
+                        <div class="ovalWhite textoBlanco">
+                            <div class="textoBlanco">
+                                Plaça d’America, 2<br>
+                                Soller, Illes Balears<br>
+                                España
+                                <i class="fa fa-phone fa-lg"></i><a href="tel:651 70 12 93"> 651 70 12 93</a><br>
+                                <i class="fa fa-envelope fa-lg"></i><a href="mailto:dodepit@food.net"> dodepit@food.net</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 align-self-center padCinco" style="margin-bottom: 2em;">
+                    <div class="text-center">
+                        <h5 class="textoBlanco">Síguenos en:</h5>
+                        <a class="btn btn-social-icon btn-facebook" href="https://es-es.facebook.com/dodepit.soller/"><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/explore/locations/1664275306954870/spain/soller/dodepit/?hl=es"><i
+                                class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="https://www.tripadvisor.com/Restaurant_Review-g319794-d14107733-Reviews-Dodepit_taberna-Soller_Majorca_Balearic_Islands.html"><i
+                                class="fa fa-tripadvisor"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="https://es.linkedin.com/in/victoria-calvo-7a496b133"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="https://www.srperro.com/dodepit-soller"><img
+                                class="imgfluid" src="img/dog5.png"></img></a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="https://rawgit.com/GianlucaGuarini/parallax/master/dist/Parallax.js"></script>
-
-
-
-
+    <script src="js/js.js"></script>
     <script>
-        var next = false;
-        /*Parallax gianlucaguarini*/
-        var p = new Parallax('.parallax', {
-            offsetYBounds: 50,
-            intensity: 30,
-            center: 0.5,
-            safeHeight: 0.15
-        }).init();
-        /**/
         $(document).ready(function () {
             /*Typed.js*/
-            typeJumbo();
-
-            /*Popper*/
-            $('[data-toggle="popover"]').popover({
-                html: true,
-                title: "Popover Header",
-                placement: 'top',
-                //placement: 'top-end',
-                //content: "<img src='img/logo3.png' class='img-fluid'>",
-                //container: 'body',
-                //content: "<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' width='600' height='450' frameborder='0' style='border:0' src='https://www.google.es/maps/place/Pla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears/@39.7683084,2.7101667,17z/data=!3m1!4b1!4m5!3m4!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!8m2!3d39.7683084!4d2.7114072' allowfullscreen></iframe></div>"
-                content: "<iframe class='embed-responsive-item' width='600' height='450' frameborder='0' style='border:0' src='https://www.google.es/maps/place/Pla%C3%A7a+d'Am%C3%A8rica,+07100+S%C3%B3ller,+Illes+Balears/@39.7683084,2.7101667,17z/data=!3m1!4b1!4m5!3m4!1s0x1297e8b90df488b5:0xdfa7a37c175ac21d!8m2!3d39.7683084!4d2.7114072' allowfullscreen></iframe>"
-
-            });
-
-            /**/
-        });
-
-        function typeJumbo() {
             $("#write1").typed({
                 strings: ["Qué beber"],
                 showCursor: false,
                 typeSpeed: 200
-
             });
-            /*
-            $("#write2").typed({
-                strings: ["Todos los mediodías tienes un menú chachi!"],
-                showCursor: false,
-                typeSpeed: 30,
-                startDelay: 1500
-            });
-            */
-
-        }
-
+        });
     </script>
 </body>
 
